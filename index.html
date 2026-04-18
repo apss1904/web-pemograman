@@ -34,7 +34,7 @@
         gap: 20px;
         align-items: flex-start;
     }
-
+    
     </style>
     <p>
         <h4>Latihan Membuat Tabel</h4>
@@ -67,9 +67,7 @@
             </td>
         </tr>
     </table>
-   
-     
-    
+
     <table border="1" cellpadding="10" cellspacing="0">
         
         <tr>
@@ -96,5 +94,82 @@
         </tr>
     </table>
 </div>
+<!-- ELEMENT FORMULIR -->
+    <h2>3. Penggunaan Element Fromulir</h2>
+    <form action="proses-form.php" method="post" enctype="multipart/form-data">
+    <fieldset>
+    <legend><h1>Formulir Pendaftaran Mahasiswa Baru</h1></legend>
+    <table>
+        <tr>
+            <td> Nama Calon Mahasiswa</td>
+            <td> :</td>
+            <td> <input type="text" name="nama" required/><br></td>
+        </tr>
+        <tr>
+            <td> Tempat Tanggal Lahir</td>
+            <td> :</td>
+            <td> <input type="text" name="tempatLahir"/><input type="date" name="tanggal"></td>
+        </tr>
+        <tr>
+        <td>Agama</td>
+            <td>:</td>
+            <td><select name="agama">
+                <option value="Islam"> Islam</option>
+                <option value="Kristen"> Kristen</option>
+                <option value="Katolik"> Katolik</option>
+                <option value="Budha"> Budha</option>
+                <option value="Hindu"> Hindu</option>
+        </select></td>
+        </tr>
+        <tr>
+            <td>Alamat</td>
+            <td>:</td>
+            <td><textarea name="komentar" rows="4" cols="50" ></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>No Telp/Hp</td>
+            <td>:</td>
+            <td><input type="number" name="number" /></td>
+        </tr>
+        <td>Program Studi</td>
+            <td>:</td>
+            <td><select name="prodi">
+                <option value="Sistem Komputer"> Sistem Komputer</option>
+                <option value="Teknologi Informasi"> Teknologi Informasi</option>
+                <option value="Teknik Komputer"> Teknik Komputer</option>
+                <option value="Kecerdasan Buatan"> Kecerdasan Buatan</option>
+                <option value="Sistem Informasi"> Sistem Informasi</option>
+                <option value="Sains Data"> Sains Data</option>
+        </select></td>
+        </tr>
+        <tr>
+            <td>Jenis Kelamin</td>
+            <td>:</td>
+            <td><input type="radio" name="jenisKelamin" value="Pria"> Pria
+            <input type="radio" name="jenisKelamin" value="Wanita"> Wanita</td>
+        </tr>
+        <tr>
+            <td>Hobi</td>
+            <td>:</td>
+            <td><input type="checkbox" name="hobi[]" value="Membaca"> Membaca </input>
+            <input type="checkbox" name="hobi[]" value="Menulis"> Menulis </input>
+            <input type="checkbox" name="hobi[]" value="Olahraga"> Olahraga </input></td>
+        </tr>
+        <tr>
+            <td>Pas Foto</td>
+            <td>:</td>
+            <td><input type="file" name="foto" /></td>
+        </tr>
+        <tr>
+            <td><input type="submit" name="submit" value="SUBMIT"/></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    </fieldset>
+    
+    
+
 </body>
 </html>
